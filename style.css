@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    text-decoration: none;
+    list-style: none;
+}
+
+hr {
+    min-width: 100%;
+    border: 1px solid rgba(135, 135, 135, 0.477);
+}
+
+span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(245, 152, 23);
+}
+
+
+.wrapper {
+   
+}
+
+.content__container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.box-title {
+    margin-bottom: 25px;
+    padding: 30px 0;
+   
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding: 0 50px;
+}
+
+.sub-title {
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: absolute;
+    padding: 0 50px;
+
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    gap: 8px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    position: relative;
+    border: 1px solid rgba(135, 135, 135, 0.477);
+}
+
+.card:hover{
+    box-shadow: 1px 1px 15px #9f9f9f89;
+    transition: .3s;
+}
+
+.card-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 25px 70px 10px 70px;
+}
+
+.card-price {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px 0;
+    color: rgba(63, 62, 62, 0.841);
+}
+.info-list {
+    padding-bottom: 110px;
+}
+
+.list-item {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    margin-top: 25px;
+    text-align: center;
+    color: rgba(63, 62, 62, 0.841);
+}
+
+
+/* -----------------img------- */
+img {
+    position: absolute;
+    left: 0;
+}
+
+/* ------------------btn--------- */
+.btn button {
+    position: absolute;
+    /* bottom: 20px; */
+    background-color: rgb(22, 152, 152);
+    border: none;
+    border-radius: 50px;
+    padding: 12px 20px;
+    left: 50%;
+    bottom: 12px;
+    margin: 0 auto;
+    transform: translate(-50%, 0);
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+
+.btn button:hover {
+    cursor: pointer;
+    color: #cfcbcb;
+    transition: .3s;
+}
+
+/* ---------------------@media----- */
+@media (max-width: 1280px) {
+    .card {
+        min-width: 350px;
+        margin-bottom: 20px;
+    }
+    .main-content {
+        justify-content: center;
+        gap: 50px;
+        padding: 0 3%;
+    }
+    .title {
+        text-align: center;
+    }
+    .sub-title {
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        min-width: 350px;
+    }
+    .main-content {
+        padding: 0 160px;
+        gap: 10px;
+    }
+    .title {
+        text-align: center;
+    }
+    .sub-title {
+        min-width: 230px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        padding: 0 1px;
+    }
+}
